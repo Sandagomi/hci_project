@@ -1,0 +1,17 @@
+.news {
+    max-width: 500px;
+    padding: 10px;
+    border:1px solid lightblue;
+    border-radius: 5px;
+    margin: 10px auto;
+    background: lightblue;
+}
+
+.news_title {
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.news_body {
+    padding-top: 10px;
+}

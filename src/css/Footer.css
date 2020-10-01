@@ -1,0 +1,36 @@
+.main-footer {
+
+    
+    padding-top:3em;
+    position:relative;
+    bottom: 0;
+    width:100%;
+    background-color:#9f9fac;
+
+
+}
+.row {
+
+    display: flex;
+    flex-direction: row;
+    
+}
+.col-one {
+
+    margin-left: 500px;
+}
+.col-two {
+    margin-left: 20px;
+}
+.col-three {
+    margin-left: 20px;
+
+}
+
+.col-reserved {
+    margin-left: 10px;
+}
+
+.details {
+    margin-left: 475px;
+}

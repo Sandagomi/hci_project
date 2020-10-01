@@ -1,0 +1,20 @@
+.prompt {
+
+    width: 400px;
+    margin-left: 350px;
+}
+
+.news_container {
+
+    font-family: 'Times New Roman', Times, serif;
+    margin:0 auto;
+   
+}
+
+.news_heading {
+    margin-left: 20px;
+}
+
+.main_new_container {
+    min-height: calc (100vh - 43px - 122px);
+}
