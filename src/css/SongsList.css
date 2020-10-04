@@ -1,0 +1,10 @@
+.SongListcontainer {
+  border: 1px solid black;
+  width: 95%;
+  height: 80px;
+  margin: 10px;
+  padding: 10px;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: row;
+}

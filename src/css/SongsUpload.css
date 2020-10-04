@@ -1,0 +1,35 @@
+.songsupload {
+  display: flex;
+  flex-direction: row;
+}
+
+.registration {
+  width: 40%;
+  padding: 10px;
+  margin-left: 60px;
+  margin-top: 20px;
+  border: 1px solid darkblue;
+}
+
+.login {
+  width: 40%;
+  padding: 10px;
+  margin-left: 80px;
+  margin-top: 20px;
+  border: 1px solid darkblue;
+}
+
+.guest_button {
+  margin-left: 300px;
+  margin-top: 100px;
+}
+
+.uploadicon {
+  text-align: center;
+  font-size: 140px;
+  padding-top: 60px;
+}
+
+.uploadbutton {
+  margin-left: 170px;
+}

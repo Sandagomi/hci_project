@@ -1,8 +1,8 @@
 .all_news {
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    min-height: calc (100vh - 43px - 122px);
-
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  min-height: calc (100vh - 43px - 122px);
+  margin-right: 10px;
+  margin-left: 10px;
 }
