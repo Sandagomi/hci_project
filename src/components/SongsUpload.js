@@ -30,7 +30,7 @@ const SongsUpload = () => {
             <i class="arrow alternate circle up icon"></i>
           </div>
           <div className="uploadbutton">
-            <button class="positive ui button">Upload</button>
+            <button class="positive ui button">Uploan</button>
           </div>
         </form>
       </div>

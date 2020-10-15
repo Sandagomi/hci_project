@@ -12,6 +12,7 @@ const ContactUs = () => {
         <div className="head">
           Contact Us <i class="envelope outline icon"></i>
         </div>
+
         <div class="ui form success">
           <div className="email">
             <div class="field">
@@ -25,11 +26,13 @@ const ContactUs = () => {
               <label>Text</label>
               <textarea></textarea>
             </div>
+
           </div>
           <div class="ui success message">
             <div class="header">Please fill the above</div>
             <p>Your feedback is our success!</p>
           </div>
+          
           <div class="ui submit button">Submit</div>
         </div>
       </div>

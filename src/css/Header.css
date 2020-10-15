@@ -1,0 +1,8 @@
+.headermain {
+  background: transparent;
+  position: sticky;
+}
+
+.headermain.active {
+  background: turquoise;
+}

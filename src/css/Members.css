@@ -1,8 +1,8 @@
 .main_member_container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 10px;
-    margin-left: 60px;
-    grid-gap: 10px;
-    padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+  margin-left: 60px;
+  grid-gap: 10px;
+  padding-top: 10px;
 }
