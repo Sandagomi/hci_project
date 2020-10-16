@@ -1,5 +1,6 @@
 import React from "react";
 import faker from 'faker';
+import {Link} from "react-router-dom";
 import "../css/MemberSingle.css"
 
 
@@ -28,7 +29,9 @@ const MemberSingle = (props) => {
               {props.f_count} Friends
             </a>
           </div>
-          <div className="updateButton"> <button class="positive ui button">Update</button></div>
+          <div className="updateButton"> 
+          <Link to="/MemberUpdate"> <button class="positive ui button">Update</button></Link>
+         </div>
         </div>
       </div>
       </div>

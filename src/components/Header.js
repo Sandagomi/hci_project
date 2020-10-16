@@ -18,6 +18,7 @@ const Header = () => {
 
   }
 
+  
     window.addEventListener('scroll',changeBackground)
   
 
@@ -25,7 +26,7 @@ const Header = () => {
     <div>
       <nav className=  {navbar ? 'navbar active' : 'navbar'}>
         <div className="nav-container">
-          <Link to="/Home"><a className="item">Home</a></Link>
+          <Link to="/"><a className="item">Home</a></Link>
           <Link to="/SongsUpload"><a className="item">Songs</a></Link>
           <Link to="/MemberRegistraion"><a className="item">Members</a></Link>
           <Link to="/ImageRender"><a className="item">Gallery</a></Link> 

@@ -13,6 +13,7 @@ import Songs from "./components/Songs";
 import SongsList from "./components/SongsList";
 import ContactUs from "./components/ContactUs";
 import ImageRender from "./components/ImageRender";
+import MemberUpdate from "./components/MemberUpdate";
 
 
 import "./App.css";
@@ -27,7 +28,7 @@ function App() {
         
         <div className="content">
           <Switch>
-         <Route path="/Home" component={Home}/>
+         <Route path="/" exact component={Home}/>
          <Route path="/MemberRegistraion" component={MemberRegistraion}/>
          <Route path="/Members" component={Members}/>
          <Route path="/MemberSingle" component={MemberSingle}/>
@@ -37,6 +38,7 @@ function App() {
          <Route path="/SongsStream" component={SongsStream}/>
          <Route path="/ContactUs" component={ContactUs}/>
          <Route path="/ImageRender " components={ImageRender}/>
+         <Route path="/MemberUpdate" component={MemberUpdate}/>
          </Switch>
         </div>
       </div>

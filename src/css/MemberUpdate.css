@@ -1,0 +1,8 @@
+.update-container {
+  border: solid 2px darkblue;
+  width: 40%;
+  margin: 10px;
+  padding: 10px;
+  position: absolute;
+  left: 28%;
+}
