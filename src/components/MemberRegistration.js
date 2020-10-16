@@ -1,26 +1,79 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Link} from "react-router-dom"
 import '../css/MemberRegistration.css'
 
 const MemberRegistration = () => {
 
+    const [firstName,setFirstName] = useState ("");
+    const [lastName, setLastName] = useState ("");
+    const [email, setEmail] = useState ("");
+
+    const [firstNameErr,setFirstNameErr] = useState({})
+    const [lastNameErr, setLastNameErr] = useState({})
+    const [emailErr,setEmailErr] = useState({})
+
+    const onSubmit = (e) => {
+
+        e.preventDefault();
+        const isValid = formValidation();
+
+    }
+
+    const formValidation = () => {
+
+        const firstNameErr = {};
+        const lastNameErr = {};
+        const emailErr = {};
+        let isValid = true;
+
+        if (firstName.trim().length < 2) {
+            firstNameErr.firstNameShort = "First Name is too short";
+            isValid = false;
+        }
+        if (lastName.trim().length < 2) {
+            lastNameErr.lastNameShort = "last name is too short";
+            isValid = false;
+        }
+        if (!email.includes("@")){
+            emailErr.emailAtSign = "email must contains @ sign";
+            isValid = false;
+        }
+
+
+        setFirstNameErr(firstNameErr);
+        setLastNameErr(lastNameErr);
+        setEmailErr(emailErr);
+
+        return isValid;
+
+    }
+
 
     return (
         <div className="main_container">
             <div className="registration">
-            <form className="ui form">
+            <form onSubmit={onSubmit} className="ui form">
                 <div className="field">
                       <label>First Name</label>
-                         <input type="text" name="first-name" placeholder="First Name"/>
+                         <input value={firstName} onChange={(e)=>setFirstName(e.target.value)} type="text" name="first-name" placeholder="First Name"/>
                  </div>
+                 {Object.keys(firstNameErr).map((key)=>{
+                     return <div style={{color:"red"}}>{firstNameErr[key]}</div>
+                 })}
                  <div className="field">
                        <label>Last Name</label>
-                           <input type="text" name="last-name" placeholder="Last Name"/>
+                           <input value={lastName} onChange={(e)=>setLastName(e.target.value)} type="text" name="last-name" placeholder="Last Name"/>
                  </div>
+                 {Object.keys(lastNameErr).map((key)=>{
+                     return <div style={{color:"red"}}>{lastNameErr[key]}</div>
+                 })}
                  <div className="field">
                        <label>Email</label>
-                           <input type="text" name="Email" placeholder="Email"/>
-                 </div>
+                           <input value={email} onChange={(e)=>setEmail(e.target.value)} type="text" name="Email" placeholder="Email"/>
+                 </div> 
+                 {Object.keys(emailErr).map((key)=>{
+                     return <div style={{color:"red"}}>{emailErr[key]}</div>
+                 })}
                 <div className="field">
                <div className="ui checkbox">
                         <input type="checkbox" tabindex="0" className="hidden"/>
@@ -39,7 +92,7 @@ const MemberRegistration = () => {
                  </div>
                  <div className="field">
                        <label>Password</label>
-                           <input type="text" name="Password" placeholder="Password"/>
+                           <input type="password" name="Password" placeholder="Password"/>
                  </div>
               
                  <button className="ui button" type="login">login</button>

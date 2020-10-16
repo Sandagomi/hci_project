@@ -1,5 +1,6 @@
 import React from "react";
 import faker from 'faker';
+import "../css/MemberSingle.css"
 
 
 
@@ -7,6 +8,7 @@ const MemberSingle = (props) => {
 
 
     return(
+      <div className="singlecontent">
         <div className="membersingle-container">
         <div className="ui card">
           <div className="image">
@@ -26,7 +28,9 @@ const MemberSingle = (props) => {
               {props.f_count} Friends
             </a>
           </div>
+          <div className="updateButton"> <button class="positive ui button">Update</button></div>
         </div>
+      </div>
       </div>
     )
 
