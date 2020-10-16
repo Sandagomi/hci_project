@@ -11,7 +11,7 @@ const SongsList = (props) => {
             <i class="music icon"></i>
             <div class="content">
               <div class="header">{props.artist}</div>
-              <Link to="/SongsStream"> <a>{props.name}</a> </Link> 
+               {props.name}
             </div>
           </div>
         </div>

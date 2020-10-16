@@ -1,7 +1,7 @@
 .stream-container {
   border: solid 2px lightblue;
 
-  height: 300px;
+  height: 400px;
   margin: 20px;
   background-color: lightgrey;
 }
@@ -9,6 +9,40 @@
 .streambutton {
   padding: 10px;
   margin: 5px;
+  border-radius: 8px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  display: inline-block;
+  background-color: #f4511e;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 20px;
+  margin-left: 20%;
+}
+
+.stopbutton {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  display: inline-block;
+  background-color: #f4511e;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 20%;
 }
 
 .stream-heading {
@@ -16,11 +50,35 @@
   margin-bottom: 10px;
 }
 
-.stream-links {
+.streaxm-links {
   margin: 0;
   position: absolute;
   top: 25%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.steammain {
+  display: flex;
+  flex-direction: row;
+}
+
+.steamimage {
+  width: 40%;
+  padding: 10px;
+  margin-left: 60px;
+  margin-top: 20px;
+  border: 1px solid darkblue;
+}
+
+.steambutton {
+  width: 40%;
+  padding: 10px;
+  margin-left: 80px;
+  margin-top: 20px;
+  border: 1px solid darkblue;
+}
+.head {
+  text-align: center;
 }

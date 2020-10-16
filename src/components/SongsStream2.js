@@ -7,14 +7,14 @@ import {Link} from "react-router-dom";
 
 
 const audioClips = [
-    {sound:"https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", label:"Play"},
-    //{sound:"https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3", label:"Play"},
-    //{sound:"https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3", label:"Play"},
+    //{sound:"https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", label:"Play"},
+    {sound:"https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3", label:"Play"},
+   // {sound:"https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3", label:"Play"},
     //{sound:"https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3", label:"Play"}
 ]
 
 
-const SongsStream = () => {
+const SongsStream2 = () => {
 
 
     const soundPlay = (src) => {
@@ -41,9 +41,7 @@ const SongsStream = () => {
    
 
     return (
-        
         <div className="stream-container">
-            
              <h1 className="stream-heading">Music Stream</h1>
             <div className="steammain">
                
@@ -62,9 +60,8 @@ const SongsStream = () => {
                 </div>
                
             </div>
-            </div>
-       
+        </div>
     )
 
 }
-export default SongsStream;
+export default SongsStream2;
