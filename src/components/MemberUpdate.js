@@ -6,12 +6,12 @@ const MemberUpdate = () => {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
-    const [birthDate, setBirthDate] = useState("");
+    
 
     const [firstNameUpdateErr,setFirstNameUpdateErr] = useState({})
     const [lastNameUpdateErr, setLastNameUpdateErr] = useState({})
     const [emailUpdateErr,setEmailUpdateErr] = useState({})
-    const [birthDateUpdateErr, setBirthDateUpdateErr] = useState({});
+    
 
 
     const onSubmit = (e) => {
@@ -42,16 +42,13 @@ const MemberUpdate = () => {
             isValid = false;
         }
 
-        if (!birthDate.includes("asd")){
-            birthDateUpdateErr.datestrings = "Should be a valid date";
-            isValid = false;
-        }
+        
 
 
         setFirstNameUpdateErr(firstNameUpdateErr);
         setLastNameUpdateErr(lastNameUpdateErr);
         setEmailUpdateErr(emailUpdateErr);
-        setBirthDateUpdateErr(birthDateUpdateErr);
+        
 
         return isValid;
 
@@ -65,18 +62,24 @@ const MemberUpdate = () => {
                   <label>First Name</label>
                     <input value={firstName} onChange={(e)=>setFirstName(e.target.value)} type="text" name="first-name" placeholder="First Name"/>
             </div>
+            {Object.keys(firstNameUpdateErr).map((key)=>{
+                     return <div style={{color:"red"}}>{firstNameUpdateErr[key]}</div>
+                 })}
             <div class="field">
                   <label>Last Name</label>
                       <input value={lastName} onChange={(e)=>setLastName(e.target.value)} type="text" name="last-name" placeholder="Last Name"/>
             </div>
+            {Object.keys(lastNameUpdateErr).map((key)=>{
+                     return <div style={{color:"red"}}>{lastNameUpdateErr[key]}</div>
+                 })}
             <div class="field">
                   <label>Email</label>
                       <input value={email} onChange={(e)=>setEmail(e.target.value)}  type="text" name="email" placeholder="Email"/>
             </div>
-            <div class="field">
-                  <label>BirthDate</label>
-                      <input value={birthDate} onChange={(e)=>setBirthDate(e.target.value)}  type="text" name="BirthDate" placeholder="BirthDate"/>
-            </div>
+            {Object.keys(emailUpdateErr).map((key)=>{
+                     return <div style={{color:"red"}}>{emailUpdateErr[key]}</div>
+                 })}
+            
             <div class="field">
             
              </div>
