@@ -1,8 +1,23 @@
-.headermain {
-  background: transparent;
+.navbar {
+  height: 50px;
+  top: 0;
   position: sticky;
+  font-size: medium;
+  background-color: white;
 }
 
-.headermain.active {
-  background: turquoise;
+.navbar.active {
+  background-color: red;
+}
+
+.nav-container {
+  display: flex;
+  height: 50px;
+  margin: 10px;
+  max-width: 1500px;
+}
+
+.item {
+  padding-right: 15px;
+  color: black;
 }

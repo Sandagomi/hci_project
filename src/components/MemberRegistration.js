@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom"
 import '../css/MemberRegistration.css'
 
 const MemberRegistration = () => {
@@ -45,7 +46,8 @@ const MemberRegistration = () => {
                  <span>Forgot Password?</span>
                  
                  <div className="guest_button">
-                 <button className="ui button" type="login">As a Guest</button>
+                     <Link to="/Members"><button className="ui button" type="login">As a Guest</button></Link>
+               
                  </div>
                 
                 </form>

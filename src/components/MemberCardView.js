@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 import "../css/MemberCardView.css";
 
 const MemberCardView = (props) => {
@@ -9,7 +10,7 @@ const MemberCardView = (props) => {
           <img src={props.img} />
         </div>
         <div className="content">
-          <a className="header">{props.name}</a>
+        <Link to="/MemberSingle"><a className="header">{props.name}</a></Link>
           <div className="meta">
             <span className="date">Joined in {props.year}</span>
           </div>
