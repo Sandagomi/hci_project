@@ -1,0 +1,26 @@
+.stream-container {
+  border: solid 2px lightblue;
+
+  height: 300px;
+  margin: 20px;
+  background-color: lightgrey;
+}
+
+.streambutton {
+  padding: 10px;
+  margin: 5px;
+}
+
+.stream-heading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.stream-links {
+  margin: 0;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import "../css/SongsList.css";
 
 const SongsList = (props) => {
@@ -10,7 +11,7 @@ const SongsList = (props) => {
             <i class="music icon"></i>
             <div class="content">
               <div class="header">{props.artist}</div>
-              {props.name}
+              <Link to="/SongsStream"> <a>{props.name}</a> </Link> 
             </div>
           </div>
         </div>

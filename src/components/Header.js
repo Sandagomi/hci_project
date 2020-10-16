@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
 import "../css/Header.css";
 
 
@@ -26,7 +26,7 @@ const Header = () => {
       <nav className=  {navbar ? 'navbar active' : 'navbar'}>
         <div className="nav-container">
           <Link to="/Home"><a className="item">Home</a></Link>
-          <Link to="/Songs"><a className="item">Songs</a></Link>
+          <Link to="/SongsUpload"><a className="item">Songs</a></Link>
           <Link to="/MemberRegistraion"><a className="item">Members</a></Link>
           <Link><a className="item">Gallery</a></Link> 
          

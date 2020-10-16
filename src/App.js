@@ -7,7 +7,10 @@ import Home from "./components/Home";
 import Members from "./components/Members";
 import MemberRegistraion from "./components/MemberRegistration"
 import MemberSingle from "./components/MemberSingle";
+import SongsUpload from "./components/SongsUpload";
+import SongsStream from "./components/SongsStream";
 import Songs from "./components/Songs";
+import SongsList from "./components/SongsList";
 import ContactUs from "./components/ContactUs"
 
 
@@ -27,7 +30,10 @@ function App() {
          <Route path="/MemberRegistraion" component={MemberRegistraion}/>
          <Route path="/Members" component={Members}/>
          <Route path="/MemberSingle" component={MemberSingle}/>
+         <Route path="/SongsUpload" component={SongsUpload}/>
          <Route path="/Songs" component={Songs}/>
+         <Route path="/SongsList" component={SongsList}/>
+         <Route path="/SongsStream" component={SongsStream}/>
          <Route path="/ContactUs" component={ContactUs}/>
          </Switch>
         </div>

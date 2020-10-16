@@ -1,5 +1,6 @@
 import React from "react";
 import icon from "../Images/car.png";
+import {Link} from "react-router-dom";
 import "../css/SongsUpload.css";
 
 const SongsUpload = () => {
@@ -31,6 +32,9 @@ const SongsUpload = () => {
           </div>
           <div className="uploadbutton">
             <button class="positive ui button">Uploan</button>
+          </div>
+          <div className="stream-button">
+            <Link to="/Songs"><button class="right positive ui button">Stream</button></Link>
           </div>
         </form>
       </div>
