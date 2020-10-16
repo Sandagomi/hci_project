@@ -20,7 +20,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="details">
-          <p><Link to="/ContactUs"><a className="detailsOne">Contact Us</a></Link> | <Link><a className="detailsTwo">About Us</a> </Link></p>
+          <p><Link to="/ContactUs"><a className="detailsOne">Contact Us</a></Link> | <Link to="/AboutUs"><a className="detailsTwo">About Us</a> </Link></p>
         </div>
         <br />
         <div className="row">

@@ -18,6 +18,7 @@ import ContactUs from "./components/ContactUs";
 import ImageRender from "./components/ImageRender";
 import ImageUpload from "./components/ImageUpload";
 import MemberUpdate from "./components/MemberUpdate";
+import AboutUs from "./components/AboutUs";
 
 
 import "./App.css";
@@ -46,6 +47,7 @@ function App() {
          <Route path="/ContactUs" component={ContactUs}/>
          <Route path="/ImageUpload" components={ImageUpload}/>
          <Route path="/MemberUpdate" component={MemberUpdate}/>
+         <Route path="/AboutUs" component={AboutUs}/>
          </Switch>
         </div>
       </div>
