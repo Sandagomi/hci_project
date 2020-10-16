@@ -11,7 +11,8 @@ import SongsUpload from "./components/SongsUpload";
 import SongsStream from "./components/SongsStream";
 import Songs from "./components/Songs";
 import SongsList from "./components/SongsList";
-import ContactUs from "./components/ContactUs"
+import ContactUs from "./components/ContactUs";
+import ImageRender from "./components/ImageRender";
 
 
 import "./App.css";
@@ -35,6 +36,7 @@ function App() {
          <Route path="/SongsList" component={SongsList}/>
          <Route path="/SongsStream" component={SongsStream}/>
          <Route path="/ContactUs" component={ContactUs}/>
+         <Route path="/ImageRender " components={ImageRender}/>
          </Switch>
         </div>
       </div>

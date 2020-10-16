@@ -3,7 +3,7 @@
   top: 0;
   position: sticky;
   font-size: medium;
-  background-color: white;
+  background-color: #c8c8c8;
 }
 
 .navbar.active {
@@ -13,11 +13,21 @@
 .nav-container {
   display: flex;
   height: 50px;
-  margin: 10px;
+  padding: 10px;
+
   max-width: 1500px;
 }
 
 .item {
-  padding-right: 15px;
+  padding-right: 25px;
   color: black;
+}
+
+.webnametag {
+  margin-left: 630px;
+  font-size: large;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #1919a3;
 }

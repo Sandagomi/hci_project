@@ -28,7 +28,10 @@ const Header = () => {
           <Link to="/Home"><a className="item">Home</a></Link>
           <Link to="/SongsUpload"><a className="item">Songs</a></Link>
           <Link to="/MemberRegistraion"><a className="item">Members</a></Link>
-          <Link><a className="item">Gallery</a></Link> 
+          <Link to="/ImageRender"><a className="item">Gallery</a></Link> 
+          <div className="webnametag">
+            <p>Sinhala Lanka <i class="headphones icon"></i></p>
+          </div>
          
         </div>
       </nav>
