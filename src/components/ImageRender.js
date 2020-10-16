@@ -1,72 +1,35 @@
-import React, { useState, useEffect } from 'react';
-import  ImageHeading  from './ImageHeading';
-import  UnsplashImage  from './UnsplashImage';
-import  ImageLoader  from './ImageLoader';
-import axios from 'axios';
-import InfiniteScroll from 'react-infinite-scroll-component';
+import React from 'react';
+import SearchBar from './ImageSearchBar'
+import ImageList from './ImageList'
+import unsplash from '../API/Unsplash'
 
-import styled from 'styled-components';
-import { createGlobalStyle } from 'styled-components';
+class App extends React.Component{
 
-// Style
-const GlobalStyle = createGlobalStyle`
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+        state ={images: []}
 
-  body {
-    font-family: sans-serif;
-  }
-`;
+    onSaveSubmit= async (term)=>{
 
-const WrapperImages = styled.section`
-  max-width: 70rem;
-  margin: 4rem auto;
-  display: grid;
-  grid-gap: 1em;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-auto-rows: 300px;
-`;
+        const response = await unsplash.get('/search/photos',{
 
-function App() {
-  const [images, setImage] = useState([]);
+            params: {query:term},
 
-  useEffect(() => {
-    fetchImages();
-  }, [])
+        })
 
-  const fetchImages = (count = 10) => {
-    const apiRoot = "https://api.unsplash.com";
-    const accessKey = process.env.REACT_APP_ACCESSKEY;
-
-    axios
-      .get(`${apiRoot}/photos/random?client_id=${'Y3MMXki-w_JCcgb75MH5NDNncrx_f7OkIvuZsoN3B9M'}&count=10`)
-      .then(res => {
-        setImage([...images, ...res.data]);
-      })
-  }
+        
+        this.setState({images:response.data.results})
 
 
-  return (
-    <div>
-      <ImageHeading />
-      <GlobalStyle />
-      <InfiniteScroll
-        dataLength={images.length}
-        next={fetchImages}
-        hasMore={true}
-        Loader={<ImageLoader />}
-      >
-        <WrapperImages>
-          {images.map(image => (
-            <UnsplashImage url={image.urls.thumb} key={image.id} />
-          ))}
-        </WrapperImages>
-      </InfiniteScroll>
-    </div>
-  );
+    }
+
+    render() {
+
+        return(
+            <div>
+                <SearchBar onSubmit={this.onSaveSubmit}/>
+                <ImageList images={this.state.images}/>
+            </div>
+
+        )
+    }
 }
-
 export default App;

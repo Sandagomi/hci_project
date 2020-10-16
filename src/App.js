@@ -45,9 +45,11 @@ function App() {
          <Route path="/SongsStream3" component={SongsStream3}/>
          <Route path="/SongsStream4" component={SongsStream4}/>
          <Route path="/ContactUs" component={ContactUs}/>
-         <Route path="/ImageUpload" components={ImageUpload}/>
          <Route path="/MemberUpdate" component={MemberUpdate}/>
          <Route path="/AboutUs" component={AboutUs}/>
+         <Route path="/ImageRender" component={ImageRender}/>
+         <Route path="/ImageUpload" component={ImageUpload}/>
+         
          </Switch>
         </div>
       </div>
